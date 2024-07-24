@@ -1,12 +1,10 @@
-# Simple-Panda-Mujoco
-
 ## Installation ##
  
 ```
 pip install -e .
 ``` 
 
-## to find the path ##
+## to find the path
 ``` 
 export PYTHONPATH='.'
 ``` 

@@ -1,0 +1,7 @@
+<mujocoinclude>   
+    <!-- <body name="target_point" pos="0.5 0 0" quat="1 0 0 0">
+        <geom size="0.01 0.01 0.3" pos="0 0 0" type="box" rgba="1 0 0 0.5"/> 
+    </body>  -->
+    <site name='target_point' pos='0.5 0 0' size='0.04 0.04 0.04' type='sphere' rgba="1 0 0 0.5"/>
+    <!-- <site name='workspace' type="box" pos='0.45 0 0.2975' size='0.3 0.35 0.2975' euler='0 0 0' rgba="0 0 1 0.1"/> -->
+</mujocoinclude>

@@ -1,0 +1,17 @@
+
+<mujoco model="franka_panda v200">
+    
+    <include file="assets.xml"/>
+    <include file='scene.xml'/>
+    <compiler meshdir=""/>
+
+    <worldbody>
+        <include file="chain.xml"/>
+        <include file="others_reach_site.xml"/>
+    </worldbody>
+
+    <include file='actuator_torque.xml'/>
+
+    <size njmax="8000"/>
+
+</mujoco>
