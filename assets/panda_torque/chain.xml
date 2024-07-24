@@ -57,7 +57,7 @@
                                     <body name="panda_leftfinger" pos="0 0 0.1654" quat="0.92388 0 0 -0.382683" childclass="panda_finger">
                                         <inertial pos="0 0.0145644 0.0227941" euler="0 0 0" mass="0.1" diaginertia="3.01220925051e-05 2.95873808038e-05 6.95125211657e-06" />
                                         
-                                        <joint name="panda_finger_joint1" axis="0 1 0" type="slide" class="panda_finger" limited="true" range="0 0.00001" damping="500" /> 
+                                        <joint name="panda_finger_joint1" axis="0 1 0" type="slide" class="panda_finger" limited="true" range="0 0.04" damping="100" /> 
                                         <geom class="panda_viz" mesh="finger_viz" />
                                         
                                         
@@ -66,7 +66,7 @@
                                     <body name="panda_rightfinger" pos="0 0 0.1654" quat="0.92388 0 0 -0.382683" childclass="panda_finger">
                                         <inertial pos="0 -0.0145644 0.0227941" quat="0 0 1 0" mass="0.1" diaginertia="3.01220925051e-05 2.95873808038e-05 6.95125211657e-06" />
                                         
-                                        <joint name="panda_finger_joint2" axis="0 -1 0" type="slide" class="panda_finger" limited="true" range="0 0.00001" damping="500" /> 
+                                        <joint name="panda_finger_joint2" axis="0 -1 0" type="slide" class="panda_finger" limited="true" range="0 0.04" damping="100" /> 
                                         <geom quat="0 0 0 1" class="panda_viz" mesh="finger_viz" />
                                         
                                     </body>

@@ -1,8 +1,6 @@
-
 import matplotlib.pyplot as plt
 import numpy as np
 import copy
-import os
 from env.mjenv_reach_site import MjEnv
 
 episode_horizon = 100000
@@ -100,18 +98,28 @@ for i in range (0,25):
 while True:
    env.render()
 """
-for i in range (0,1000):
+for i in range (0,10000):
    sim_state = sim.get_state()
-   if i < 200:
-      action = [0,0,0,1,0,0,0]
+   if i < 2000:
+      action = [0,0,0,0,0,0,0]
+      gripper_pos = 0.02
    else:
       action = [0,0,0,0,0,0,0]
+      gripper_pos = 0
    #here i calculate static friction
    action=calculate_static_friction(action, sim_state)
    #here i calculate dynamic friction
    tau = calculate_dynamic_friction(sim_state)
 
-   new_action = [action[0]-tau[0], action[1]-tau[1], action[2]-tau[2], action[3]-tau[3], action[4]-tau[4], action[5]-tau[5], action[6]-tau[6]]
+   new_action = [action[0]-tau[0], action[1]-tau[1], action[2]-tau[2], action[3]-tau[3], action[4]-tau[4], action[5]-tau[5], action[6]-tau[6], gripper_pos, gripper_pos]
 
    sim.execute(new_action)
    sim.render()
+   velocity.append(copy.deepcopy(sim_state["joint_vel"][:7]))
+
+plt.figure()
+plt.plot(velocity)
+plt.plot(velocity)
+# active grid
+plt.grid()
+plt.show()

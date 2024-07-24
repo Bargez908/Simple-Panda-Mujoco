@@ -8,8 +8,8 @@
         <motor name="panda_actuator_joint5" joint="panda_joint5" class="panda" forcelimited="false" ctrllimited="true" ctrlrange="-20 20" gear="1"/> <!-- velocity="2.61000" -->
         <motor name="panda_actuator_joint6" joint="panda_joint6" class="panda" forcelimited="false" ctrllimited="true" ctrlrange="-20 20" gear="1"/> <!-- velocity="2.61000" -->
         <motor name="panda_actuator_joint7" joint="panda_joint7" class="panda" forcelimited="false" ctrllimited="true" ctrlrange="-20 20" gear="1"/> <!-- velocity="2.9671" -->
-        <position name="panda_actuator_finger_joint1" joint="panda_finger_joint1" class="panda_finger" forcerange="-70 70" ctrlrange="0 0.04"/> <!-- velocity=".2" -->
-        <position name="panda_actuator_finger_joint2" joint="panda_finger_joint2" class="panda_finger" forcerange="-70 70" ctrlrange="0 0.04"/> <!-- velocity=".2" -->
+        <position name="panda_actuator_finger_joint1" joint="panda_finger_joint1" class="panda_finger" forcerange="-70 70" kp="200" ctrlrange="0 100"/> <!-- velocity=".2" -->
+        <position name="panda_actuator_finger_joint2" joint="panda_finger_joint2" class="panda_finger" forcerange="-70 70" kp="200" ctrlrange="0 100"/> <!-- velocity=".2" -->
     </actuator>
     
 </mujocoinclude>
